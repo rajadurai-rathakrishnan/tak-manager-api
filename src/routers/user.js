@@ -3,7 +3,7 @@ const User = require('../models/user')
 const auth = require('../middleware/auth')
 const router = new express.Router()
 const multer = require('multer')
-const Sharp = require('Sharp')
+const Sharp = require('sharp')
 const {sendWelcomeEmail,sendCancellationEmail} = require('../emails/account')
 
 router.post('/users',async (req,res)=>{
